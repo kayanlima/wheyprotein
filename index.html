@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espartanos Whey Protein - Fusion Isolate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cor-principal: #ffffff;
+      --cor-secundaria: #000000;
+      --cor-destaque: #d80000;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Anton', sans-serif;
+      background-color: var(--cor-principal);
+      color: var(--cor-secundaria);
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    header {
+      background-color: var(--cor-secundaria);
+      color: var(--cor-principal);
+      padding: 20px;
+      text-align: center;
+      transition: background-color 0.5s ease;
+    }
+    .banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: var(--cor-principal);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    .zoom-container {
+      position: relative;
+      overflow: hidden;
+    }
+    .zoom-container img {
+      max-width: 400px;
+      width: 100%;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+    .zoom-container:hover img {
+      transform: scale(1.6);
+      cursor: zoom-in;
+    }
+    .texto {
+      max-width: 500px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+    .texto:hover {
+      transform: scale(1.02);
+    }
+    .texto h2 {
+      color: var(--cor-destaque);
+      font-size: 32px;
+    }
+    .texto p {
+      font-size: 18px;
+      line-height: 1.5em;
+    }
+    .destaques {
+      background-color: var(--cor-secundaria);
+      color: var(--cor-principal);
+      padding: 40px 20px;
+      text-align: center;
+      transition: background-color 0.5s ease;
+    }
+    .destaques h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .destaques ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .destaques ul li {
+      font-size: 18px;
+      margin: 10px 0;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: calc(var(--i) * 0.2s);
+    }
+    .cta {
+      text-align: center;
+      padding: 30px;
+    }
+    .cta a {
+      background-color: var(--cor-destaque);
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: #a60000;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #eee;
+      transition: background-color 0.5s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 56px;">ESPARTANOS PROTEIN FUSION</h1>
+    <p style="font-size: 24px;">Força Ancestral. Performance Moderna.</p>
+  </header>
+
+  <section class="banner">
+    <div class="zoom-container">
+      <img src="produto1.jpg" alt="Produto Whey Protein">
+    </div>
+    <div class="texto">
+      <h2>Whey Isolado de Alta Qualidade</h2>
+      <p>26g de proteína por dose, com BCAA, Glutamina e Arginina. Ideal para ganho de massa muscular, recuperação pós-treino e performance avançada.</p>
+      <p>Sabores incríveis como Morango e Baunilha. Produto lacrado, com nota fiscal e matéria-prima importada.</p>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="zoom-container">
+      <img src="produto2.jpg" alt="Detalhes da Fórmula">
+    </div>
+    <div class="texto">
+      <h2>Fórmula Exclusiva</h2>
+      <p>Com proteína concentrada e isolada do soro do leite, albumina e caseína, nosso suplemento entrega absorção rápida e sustentada, ideal para todas as fases do seu treino.</p>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="zoom-container">
+      <img src="produto3.jpg" alt="Benefícios Nutricionais">
+    </div>
+    <div class="texto">
+      <h2>Alta Concentração Nutricional</h2>
+      <p>Com 26g de proteína por dose, o Whey Espartanos conta com aminoácidos essenciais para potencializar o desempenho físico, reduzir a fadiga e acelerar a recuperação muscular.</p>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="zoom-container">
+      <img src="produto4.jpg" alt="Kit Completo Espartanos">
+    </div>
+    <div class="texto">
+      <h2>Kit Completo para Performance</h2>
+      <p>Combine Whey, Creatina e BCAA com o shaker exclusivo da marca. Tudo que você precisa para treinos mais intensos e resultados reais.</p>
+    </div>
+  </section>
+
+  <section class="destaques">
+    <h3>Destaques do Produto</h3>
+    <ul>
+      <li style="--i:1">✔️ 100% Whey Isolado e Concentrado</li>
+      <li style="--i:2">✔️ 26g de proteína por porção</li>
+      <li style="--i:3">✔️ 5g de Glutamina, 5.4g de BCAA, 1.2g de Arginina</li>
+      <li style="--i:4">✔️ Baixo teor de carboidrato</li>
+      <li style="--i:5">✔️ Alta solubilidade e sabor excepcional</li>
+      <li style="--i:6">✔️ Produto original, direto da fábrica</li>
+      <li style="--i:7">✔️ Envio imediato + Frete grátis*</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <div style="font-size: 26px; margin-bottom: 15px; color: #d80000; font-weight: bold;">
+      DE <span style="text-decoration: line-through;">R$99,90</span> POR R$79,90
+    </div>
+    <div id="countdown" style="font-size: 22px; color: #000000; margin-bottom: 20px;"></div>
+    <a href="https://s.shopee.com.br/3VXbhQCYFz" style="font-size: 28px; padding: 20px 40px;">GARANTA O SEU AGORA</a>
+  </section>
+  <script>
+    const countdownElement = document.getElementById("countdown");
+    let time = 2 * 60 * 60 + 40 * 60; // 2h40min em segundos
+    function updateCountdown() {
+      const hours = Math.floor(time / 3600);
+      const minutes = Math.floor((time % 3600) / 60);
+      const seconds = time % 60;
+      countdownElement.textContent = `Oferta acaba em: ${hours}h ${minutes}min ${seconds}s`;
+      if (time > 0) {
+        time--;
+        setTimeout(updateCountdown, 1000);
+      } else {
+        countdownElement.textContent = "Tempo esgotado para a oferta!";
+      }
+    }
+    updateCountdown();
+  </script>
+
+  <section style="padding: 40px; max-width: 900px; margin: 0 auto; font-size: 18px; line-height: 1.6;">
+    <h3 style="text-align: center; font-size: 26px; margin-bottom: 20px;">Avaliações de Clientes</h3>
+    <div style="background-color: #f4f4f4; padding: 20px; border-radius: 10px; border: 1px solid #ddd;">
+      Sara Nadia ⭐⭐⭐⭐⭐</strong> <br>
+      "São 3.600 gramas. Pelo preço compensa muito. A entrega foi super rápida. Chegou em torno de 2 dias aqui na região de São Paulo. A marca tem laudo, é extremamente segura e confiável. Produto com ótimo custo-benefício. Possui boas quantidades de Proteínas. Enquanto ao sabor, escolhi o de baunilha, ele é bem doce e enjoativo, mas não me importo com o sabor, porque Whey realmente não tem gosto bom. Eu me importo em si com as Proteínas, e neste caso a cada 40g tem 26g de Proteínas. Está bom demais pelo preço e por ter 3.600 gramas no total. Aliás, veio 2 scoops de 25g cada um. 1 em cada Pote. Top demais."
+    </div>
+  </section>
+
+  <footer>
+    *Consulte condições para frete grátis. <br>
+    Suplementos Espartanos - Todos os direitos reservados.
+  </footer>
+<a href="https://wa.me/5583996482876" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 1000;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 32px; height: 32px;">
+</a>
+</body>
+</html>
